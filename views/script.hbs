@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button Example</title>
+</head>
+
+<body>
+    <h1>Button Example</h1>
+    <button onclick="playAudio()">Press me</button>
+    <p id="message"></p>
+</body>
+
+</html>
+<script>
+    const audioFilesAddress = 'http://' + location.host + '/';
+    var audioRaiseTime = new Audio(audioFilesAddress + 'raise.mp3');
+    function playAudio()
+    {
+        audioRaiseTime.play();
+    }
+</script>
